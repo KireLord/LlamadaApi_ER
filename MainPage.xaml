@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="llamadaApi_ER.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label Text="Enviro de API_ER" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="Ingrese la latitud:" Grid.Row="0" FontAttributes="Bold"/>
+            <Entry x:Name="LatitudEntry_ER" Placeholder="Latitud" Grid.Row="1" />
+
+            <Label Text="Ingrese la longitud:" Grid.Row="2" FontAttributes="Bold"/>
+            <Entry x:Name="LongitudEntry_ER" Placeholder="Longitud" Grid.Row="3" />
+
+            <Button Text="Enviar Datos" Clicked="OnEnviarClicked_ER" Grid.Row="4" />
+            <Label Text="Estado del Clima:" Grid.Row="5" FontAttributes="Bold"/>
+            <Label x:Name="EstadoClima_ER" Grid.Row="6" />
+            <Label Text="Pais donde ocurre:" Grid.Row="7" FontAttributes="Bold"/>
+            <Label x:Name="Pais_ER" Grid.Row="8" />
+            <Label Text="Ciudad donde ocurre: " Grid.Row="9" FontAttributes="Bold"/>
+            <Label x:Name="Ciudad_ER" Grid.Row="10" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
